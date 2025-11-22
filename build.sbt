@@ -1,36 +1,3 @@
-//name := """visitor-reception-service"""
-//organization := "com.vms.reception"
-//
-//version := "1.0-SNAPSHOT"
-//
-//lazy val root = (project in file(".")).enablePlugins(PlayScala)
-//
-//scalaVersion := "2.13.16"
-//
-//libraryDependencies ++= Seq(
-//  guice,
-//  ws,
-//  filters,
-//
-//  // Testing
-//  "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.0" % Test,
-//
-//  // Slick (if reception wants DB later; harmless now)
-//  "org.playframework" %% "play-slick"            % "6.1.0",
-//  "org.playframework" %% "play-slick-evolutions" % "6.1.0",
-//  "mysql" % "mysql-connector-java" % "8.0.26",
-//
-//  // Kafka Client
-//  "org.apache.kafka" %% "kafka" % "3.7.0",
-//
-//  // Logging
-//  "ch.qos.logback" % "logback-classic" % "1.2.13"
-//)
-//
-//TwirlKeys.templateImports += "controllers.routes"
-//
-import scala.collection.immutable.Seq
-
 name := """visitor-reception-service"""
 organization := "com.vms.reception"
 

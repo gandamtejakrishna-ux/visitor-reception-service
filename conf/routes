@@ -12,6 +12,9 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 # Check-in / Check-out (forwarded to processing service)
 POST    /api/visitors/checkin        controllers.ReceptionController.checkin
 POST    /api/visitors/checkout/:id   controllers.ReceptionController.checkout(id: Long)
+GET     /api/reception/visitors/:id     controllers.ReceptionController.getVisitor(id: Long)
+GET     /api/reception/visits/active    controllers.ReceptionController.activeVisits
+
 
 # Authentication
 POST    /auth/login           controllers.AuthController.login

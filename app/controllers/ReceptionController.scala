@@ -70,4 +70,19 @@ class ReceptionController @Inject()(
       .post(Json.obj())
       .map(res => Status(res.status)(res.body))
   }
+
+  // GET /api/visitors/:id
+  def getVisitor(id: Long): Action[AnyContent] = secured.async {
+    ws.url(s"$baseUrl/api/visitors/$id")
+      .get()
+      .map(res => Status(res.status)(res.body))
+  }
+
+  // GET /api/visits/active
+  def activeVisits: Action[AnyContent] = secured.async {
+    ws.url(s"$baseUrl/api/visits/active")
+      .get()
+      .map(res => Status(res.status)(res.body))
+  }
+
 }
